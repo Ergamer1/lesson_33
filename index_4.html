@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+  var element = document.createElement('div');
+   element.innerHTML = 'Hello, world!';
+   element.style.color = 'red';
+   var container = document.getElementById('container');
+   container.appendChild(element);
+   element.style.color = 'blue';
+   element = document.createElement('p');
+   var myDiv = container.children[0];
+   console.log(myDiv);
+   console.log(element);
+</body>
+</html>

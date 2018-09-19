@@ -1,0 +1,27 @@
+header
+	border: 1px solid $color-border
+	+
+	.nav
+		margin-top: 40px
+		&_list
+			list-style: none
+			margin: 0
+			padding: 0
+		&_item
+			display: inline-block
+			margin: 0 20px 0 0
+		&_link
+			color: $color-link
+	.box
+		&_txt
+			margin: 0 0 20px 10px
+			font-size: 18px
+		&_link
+			color: $color-link
+			border: 2px solid $color-border
+
+.btn
+	&::before
+		content: ""
+		+trianglebot(red,20px,30px)
+	
